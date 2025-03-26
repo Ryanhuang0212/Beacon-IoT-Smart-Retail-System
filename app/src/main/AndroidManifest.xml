@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.groupproject"
+    android:versionCode="30"
+    android:versionName="2.04">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="android.permission.BLUETOOTH"
+        android:label="BLUETOOTH" />
+    <permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+
+    <application
+        android:name=".GlobalVariable"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:label="AIOT無人商店"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/images"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GroupProject"
+        android:usesCleartextTraffic="true"
+        tools:ignore="Instantiatable">
+        <activity
+            android:name=".record"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".wallet"
+            android:exported="false" />
+        <activity
+            android:name=".Notification"
+            android:exported="true" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".qrcode"
+            android:exported="false" />
+        <activity
+            android:name=".purchase_record"
+            android:exported="false" />
+        <activity
+            android:name=".member"
+            android:exported="false" />
+        <activity
+            android:name=".drink_item1"
+            android:exported="false" />
+        <activity
+            android:name=".noteEdit"
+            android:exported="false" />
+        <activity
+            android:name=".Bookkeeping"
+            android:exported="false" />
+        <activity
+            android:name=".Bluetooth"
+            android:exported="false" />
+        <activity
+            android:name=".front_page"
+            android:exported="false" />
+        <activity
+            android:name=".DrinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity7"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

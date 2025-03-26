@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="首頁" />
+        <item
+            android:id="@+id/nav_member"
+            android:icon="@drawable/ic_baseline_group_24"
+            android:title="會員" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="登出" />
+
+    </group>
+
+        <item android:title="Tool">
+
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_notion"
+                        android:icon="@drawable/notifications"
+                        android:title="通知" />
+
+                    <item
+                        android:id="@+id/nav_search"
+                        android:icon="@drawable/search"
+                        android:title="搜尋" />
+                    <item
+                        android:id="@+id/nav_bookkeeping"
+                        android:icon="@drawable/bookkeeping"
+                        android:title="記事本" />
+
+
+                </group>
+
+            </menu>
+
+        </item>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="Rate Us" />
+
+        </menu>
+
+    </item>
+
+</menu>
